@@ -1,0 +1,138 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "zipcode": "12345"
+      },
+      "phoneNumbers": ["555-1234", "555-5678"],
+      "orders": [
+        {
+          "orderId": 1001,
+          "product": "Laptop",
+          "quantity": 1,
+          "price": 999.99
+        },
+        {
+          "orderId": 1002,
+          "product": "Mouse",
+          "quantity": 2,
+          "price": 25.5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Othertown",
+        "zipcode": "67890"
+      },
+      "phoneNumbers": ["555-8765", "555-4321"],
+      "orders": [
+        {
+          "orderId": 1003,
+          "product": "Keyboard",
+          "quantity": 1,
+          "price": 45.0
+        },
+        {
+          "orderId": 1004,
+          "product": "Monitor",
+          "quantity": 2,
+          "price": 150.75
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "productId": 101,
+      "name": "Laptop",
+      "description": "A high-performance laptop",
+      "price": 999.99,
+      "stock": 50
+    },
+    {
+      "productId": 102,
+      "name": "Mouse",
+      "description": "A wireless mouse",
+      "price": 25.5,
+      "stock": 200
+    },
+    {
+      "productId": 103,
+      "name": "Keyboard",
+      "description": "A mechanical keyboard",
+      "price": 45.0,
+      "stock": 150
+    },
+    {
+      "productId": 104,
+      "name": "Monitor",
+      "description": "A 24-inch monitor",
+      "price": 150.75,
+      "stock": 75
+    }
+  ],
+  "orders": [
+    {
+      "orderId": 1001,
+      "userId": 1,
+      "products": [
+        {
+          "productId": 101,
+          "quantity": 1,
+          "price": 999.99
+        }
+      ],
+      "total": 999.99,
+      "status": "Shipped"
+    },
+    {
+      "orderId": 1002,
+      "userId": 1,
+      "products": [
+        {
+          "productId": 102,
+          "quantity": 2,
+          "price": 25.5
+        }
+      ],
+      "total": 51.0,
+      "status": "Processing"
+    },
+    {
+      "orderId": 1003,
+      "userId": 2,
+      "products": [
+        {
+          "productId": 103,
+          "quantity": 1,
+          "price": 45.0
+        }
+      ],
+      "total": 45.0,
+      "status": "Delivered"
+    },
+    {
+      "orderId": 1004,
+      "userId": 2,
+      "products": [
+        {
+          "productId": 104,
+          "quantity": 2,
+          "price": 150.75
+        }
+      ],
+      "total": 301.5,
+      "status": "Delivered"
+    }
+  ]
+}
